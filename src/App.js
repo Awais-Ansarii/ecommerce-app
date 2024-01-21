@@ -4,7 +4,7 @@ import Home from "./components/Home/Home"
 import Footer from  "./components/Footer/Footer"
 import Category from "./components/Category/Category"
 import SingleProduct from "./components/SingleProduct/SingleProduct"
-// import Newsletter from "./components/Newsletter/Newsletter"
+import Newsletter from "./components/Footer/Newsletter/Newsletter"
 
 
 
@@ -12,11 +12,14 @@ import SingleProduct from "./components/SingleProduct/SingleProduct"
 const App = () => {
   return (
     <BrowserRouter>
+      <Header/>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/category/:id" element={<Category />} />
       <Route path="/product/:id" element={<SingleProduct />} />
-    </Routes>
+      </Routes>
+      <Newsletter />
+      <Footer/>
   </BrowserRouter>
   )
   
