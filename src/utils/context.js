@@ -4,14 +4,10 @@ export const Context = createContext();
 // created and exported context api
 
 const AppContext = ({ children }) => {
-    return (
-        <Context.Provider>
-            {children}
-        </Context.Provider>
-    )
-}
+    const value = "My Context Value";
+    return <Context.Provider value={value}>{children}</Context.Provider>;
+};
 
-//provided context to our app components
+//provided context to our app component
 
 export default AppContext;
-
