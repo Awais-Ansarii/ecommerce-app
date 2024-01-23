@@ -34,12 +34,11 @@ const Footer = () => {
         </div>
         <div className="col">
           <div className="title">Categories</div>
-          <span className="text">Headphones</span>
-          <span className="text">Smart Watches</span>
-          <span className="text">Bluetooth Speakers</span>
-          <span className="text">Wireless Earbuds</span>
-          <span className="text">Home Theatre</span>
-          <span className="text">Projectors</span>
+          <span className="text">Diamond Rings</span>
+          <span className="text">Gold Rings</span>
+          <span className="text">Platinum Rings</span>
+          <span className="text">Wedding Rings</span>
+          <span className="text">Casual Daily-Wear Rings</span>
         </div>
         <div className="col">
           <div className="title">Pages</div>
@@ -56,7 +55,7 @@ const Footer = () => {
           <span className="text">
             RING-BAZAR 2024 CREATED BY ReactDev. PREMIUM E-COMMERCE SOLUTIONS.
           </span>
-          <img src={Payment} />
+          <img src={Payment} alt="payment-options"/>
         </div>
       </div>
     </div>

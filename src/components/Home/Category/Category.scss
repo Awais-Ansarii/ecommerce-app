@@ -9,17 +9,19 @@
 
     .categories {
         display: flex;
+        justify-content: center;
         flex-flow: wrap;
+        flex-wrap: wrap;
         gap: 10px;
 
         .category {
             background-color: black;
-            width: calc(50% - 5px);
+            width: calc(40% - 5px);
             cursor: pointer;
             overflow: hidden;
 
             @include md {
-                width: calc(25% - 10px);
+                width: calc(20% - 10px);
             }
 
             img {
@@ -28,10 +30,18 @@
                 transition: all ease 0.3s;
             }
 
+
             &:hover {
-                img {
-                    transform: scale(1.2);
-                }
+                
+                    transform: scale(1.04);
+                
+            }
+
+            h2 {
+                color: yellow;
+                text-align: center;
+                padding-bottom: 4px;
+
             }
         }
     }
